@@ -1,0 +1,51 @@
+// ######### MIXINS #########
+
+// --------- HERO
+@mixin hero_banner ($hero-height) {
+    @extend %align_centered;
+    background: $bg-color-orange;
+    padding: $hero-padding;
+    height: $hero-height;
+
+    &__text--primary {
+        font-size: $font-xlarge;
+        font-weight: $text-regular;
+        color: $font-color-white;
+    }
+
+    &__text--secondary {
+        font-size: $font-xlarge;
+        font-weight: $text-bold;
+        color: $font-color-white;
+    }
+    &__text--third{
+        font-size:$font-large;
+        font-weight: $text-bold;
+        color: $font-color-white;
+    }
+}
+
+// --------- CARDS
+@mixin card ($bg-color-white, $font-color-darkgray, $font-color-gray , $card-img-large) {
+    @extend %align_centered;
+    @extend %card_color_scheme;
+    padding: $card-padding;
+
+    &--img {
+        width: $card-img-large;
+        margin: $card-margin;
+    }
+
+    &--title {
+        font-size: $font-large;
+        font-weight: $text-bold;
+
+    }
+
+    &--desc {
+        font-size: $font-medium;
+        font-weight: $text-regular;
+        width: $card-p-width;
+        margin: $card-p-margin;
+    }
+}

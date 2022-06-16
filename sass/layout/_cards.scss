@@ -1,0 +1,14 @@
+// CARDS
+
+.card {
+    @include card($bg-color-white, $font-color-darkgray,$font-color-gray , $card-img-large);
+    &__secondary{
+        @include card($bg-color-gray, $font-color-white, $font-color-snow, $card-img-large);
+        @extend %card_color_scheme_2;
+    }
+    &__third{
+        @include card($bg-color-gray, $font-color-white, $font-color-snow, $card-img-medium);
+    }
+}
+
+

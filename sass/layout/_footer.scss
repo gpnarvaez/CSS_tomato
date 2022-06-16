@@ -1,0 +1,6 @@
+.footer {
+    @extend %footer_dimensions;
+    &__logo {
+        width: $footer-img-width;
+    }
+}

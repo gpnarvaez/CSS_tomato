@@ -1,0 +1,8 @@
+.nav{ 
+    &__logo{
+       @extend %nav_aligns;
+    }
+    &__img{
+        width:$nav-img-width;
+    }
+}

@@ -1,0 +1,48 @@
+// ######### PLACEHOLDERS #########
+
+%nav_aligns{
+    display: flex;
+    justify-content: $nav-img-position;
+    padding: $nav-padding;
+}
+%align_centered{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+}
+
+%card_color_scheme{
+    background:$bg-color-white;
+    color: $font-color-darkgray;
+}
+
+%card_color_scheme_2{
+    background:$bg-color-gray;
+    color: $font-color-white;
+}
+
+%card_img_sizes{
+    width: $card-img-large;
+}
+
+%button_dimensions{
+    width: $button-width;
+    margin: $button-margin;
+    padding: $button-padding;
+    font-size: $font-button;
+    font-weight: $text-bold;
+    background: $bg-color-white;
+    color:$font-color-darkgray;
+    border:$button-border;
+    border-radius: $button-radius;
+    cursor: pointer;
+}
+
+%footer_dimensions{
+    display: flex;
+    justify-content: center;
+    padding: $footer-padding;
+    background: $bg-color-darkgray;
+}

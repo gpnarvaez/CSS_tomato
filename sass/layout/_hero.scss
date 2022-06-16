@@ -1,0 +1,11 @@
+.hero {
+    @include hero_banner($hero-height);
+
+    &__secondary {
+        @include hero_banner($hero-height-medium);
+    }
+    &__third {
+        @include hero_banner($font-xlarge);
+
+    }
+}
